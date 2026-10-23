@@ -1,0 +1,14 @@
+使用说明：以下为自拟模板，非官方过审承诺。将全部方括号换成真实信息，删除不适用的斜杠分支。没有营收写 PRE-REVENUE；美国业务联系写真实关系或具体计划；金额按实际经营或有依据的预测，不编造流水、合同、美国员工或办公室。不要把本段中文说明提交为业务正文。
+
+[FULL LEGAL COMPANY NAME INCLUDING LLC] is a Wyoming single-member company wholly owned and managed by [FULL LEGAL NAME], who resides in China.
+
+We provide [SPECIFIC PRODUCT OR SERVICE] to [CUSTOMER TYPE] in [ACTUAL OR TARGET MARKETS]. We charge [PRICING MODEL]. Our principal place of business is [CITY, PROVINCE, CHINA], where [ACTUAL WORK PERFORMED].
+
+Our U.S. business connection is [EXISTING U.S. CUSTOMER/PARTNER/SUPPLIER RELATIONSHIP OR A CONCRETE U.S. LAUNCH PLAN]. Our current stage is [PRE-REVENUE / OPERATING]. Available supporting information includes [REAL WEBSITE, PRODUCT DEMO, CONTRACT, ORDER OR OTHER RELEVANT EVIDENCE].
+
+Initial funding will come from [ACTUAL DOCUMENTED SOURCE]. Ongoing receipts are expected from [CUSTOMER PAYMENTS / OTHER ACTUAL BUSINESS SOURCE] through [ACTUAL PAYMENT CHANNELS].
+
+We expect approximately USD [AMOUNT] in monthly incoming payments, [NUMBER] incoming transactions per month, and payments involving [COUNTRIES]. These are [FORECASTS / ESTIMATES BASED ON EXISTING OPERATIONS].
+
+We intend to use Mercury to [ACTUAL BUSINESS PURPOSES], including paying [REAL BUSINESS EXPENSE CATEGORIES].
+

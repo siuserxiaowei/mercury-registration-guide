@@ -1,0 +1,101 @@
+{
+  "schema": "mercury-registration-statistics/v1",
+  "topic": "水星银行（Mercury）注册/开户",
+  "as_of": "2026-10-23",
+  "scope": "本次中英文公开检索范围；不等于全网总量",
+  "agents_executed": 50,
+  "query_count": 119,
+  "raw_observations": 162,
+  "total_candidates": 142,
+  "duplicate_observations_collapsed": 20,
+  "original_url_count": 144,
+  "distinct_source_domains": 63,
+  "by_platform": {
+    "bilibili": 4,
+    "github": 4,
+    "hacker_news": 6,
+    "independent_web": 52,
+    "linkedin": 7,
+    "linuxdo": 2,
+    "medium": 6,
+    "mercury_official": 10,
+    "reddit": 37,
+    "v2ex": 8,
+    "x": 1,
+    "youtube": 5
+  },
+  "by_curator_status": {
+    "blocked": 17,
+    "excluded": 11,
+    "metadata_verified": 4,
+    "verified": 110
+  },
+  "by_language": {
+    "en": 90,
+    "zh": 15,
+    "zh-CN": 29,
+    "zh-Hant": 6,
+    "zh-TW": 2
+  },
+  "by_commercial": {
+    "False": 47,
+    "True": 63,
+    "unknown": 32
+  },
+  "publication_years": {
+    "2019": 1,
+    "2020": 1,
+    "2021": 4,
+    "2022": 2,
+    "2023": 4,
+    "2024": 12,
+    "2025": 19,
+    "2026": 21,
+    "unknown": 78
+  },
+  "official_reference_count": 10,
+  "accepted_body_count": 110,
+  "accepted_metadata_count": 4,
+  "weak_body_verified_count": 22,
+  "weak_metadata_verified_count": 4,
+  "decision_grade_body_count": 88,
+  "by_evidence_grade": {
+    "blocked": 17,
+    "medium": 77,
+    "strong": 12,
+    "weak": 36
+  },
+  "published_at": "2026-10-24",
+  "limitations": [
+    "142条为本次公开检索形成的内容记录，不是全网帖子总量。",
+    "110条原文独立核验、4条仅元数据核验、17条访问受阻、11条排除，分别展示。",
+    "原文核验只说明原页支持所记窄主张；申请成功或失败仍是作者/评论者自述，未独立核实银行账户或全部材料。",
+    "同一讨论可能包含多位用户的相反经历；结果标签不是独立申请样本，不计算成功率。",
+    "22条已核原文和4条元数据仍属weak；88条原文证据为strong/medium。",
+    "63条明确商业/联盟/代办内容；32条商业属性unknown，不将其视为非商业。",
+    "78条发布日期未知；不将相对时间或页面更新时间擅自当成发布日期。",
+    "转载、语言镜像和同一作者经历链不构成新增成功申请人。",
+    "未系统采集可比互动指标，不作热度排名。登录、robots、验证码和限流造成覆盖缺口。",
+    "此次发布为2026-10-23核验资料的公开整理版，发布日不是再次核验日期。"
+  ],
+  "platform_labels": {
+    "bilibili": "B站",
+    "github": "GitHub",
+    "hacker_news": "Hacker News",
+    "independent_web": "独立网站/博客",
+    "linkedin": "LinkedIn",
+    "linuxdo": "Linux.do",
+    "medium": "Medium",
+    "mercury_official": "Mercury官方",
+    "reddit": "Reddit",
+    "v2ex": "V2EX",
+    "x": "X/Twitter",
+    "youtube": "YouTube"
+  },
+  "status_labels": {
+    "verified": "原文独立核验",
+    "metadata_verified": "仅元数据核验",
+    "blocked": "访问受阻",
+    "excluded": "排除"
+  }
+}

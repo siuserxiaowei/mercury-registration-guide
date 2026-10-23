@@ -1,0 +1,30 @@
+[
+  {
+    "id": "research",
+    "title": "142条公开内容研究",
+    "file": "research.md",
+    "description": "原文核验、来源分布、商业标记与统计局限",
+    "html": "content/research.html"
+  },
+  {
+    "id": "conclusions",
+    "title": "企业户与个人户结论",
+    "file": "conclusions.md",
+    "description": "大陆用户资格、材料、地址、拒绝风险及自述案例",
+    "html": "content/conclusions.html"
+  },
+  {
+    "id": "full-process",
+    "title": "美国公司到Mercury完整流程",
+    "file": "full-process.md",
+    "description": "公司类型与州选择、EIN、开户、费用、排期及持续义务",
+    "html": "content/full-process.html"
+  },
+  {
+    "id": "checklist",
+    "title": "Wyoming单成员LLC操作清单",
+    "file": "checklist.md",
+    "description": "无SSN/ITIN路线、SS-4逐行示例、业务模板及两年预算",
+    "html": "content/checklist.html"
+  }
+]

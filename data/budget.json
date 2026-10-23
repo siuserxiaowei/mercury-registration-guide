@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-10-23",
+  "currency": "USD",
+  "period_basis": "Two consecutive 12-month periods from incorporation; agent cash timing follows actual service start",
+  "assumptions": [
+    "One China-resident natural-person owner; US single-member LLC with default disregarded classification",
+    "Northwest formation sample: 39 plus 100 state fee; first-year registered agent included; renewal 125",
+    "Minimum Wyoming annual report paid online: 60 plus 2.4 percent = 61.44; one report included in each period",
+    "One current-year Form 5472 plus pro forma Form 1120 service sample: 599 each filing cycle; scope must be accepted in writing",
+    "No invoice is a guaranteed total; unknown address, checkout, transmission, operating, professional and tax costs remain variables"
+  ],
+  "first_period_self_ein": {
+    "state_formation": 100,
+    "formation_service": 39,
+    "registered_agent": 0,
+    "ein_government": 0,
+    "ein_service": 0,
+    "annual_report_online": 61.44,
+    "tax_filing_service_sample": 599,
+    "mercury_base_required_fees": 0,
+    "boi_government_filing": 0,
+    "subtotal": 799.44
+  },
+  "first_period_assisted_ein": {
+    "state_formation": 100,
+    "formation_service": 39,
+    "registered_agent": 0,
+    "ein_government": 0,
+    "ein_service": 200,
+    "annual_report_online": 61.44,
+    "tax_filing_service_sample": 599,
+    "mercury_base_required_fees": 0,
+    "boi_government_filing": 0,
+    "subtotal": 999.44
+  },
+  "second_period": {
+    "state_formation": 0,
+    "formation_service": 0,
+    "registered_agent": 125,
+    "ein_government": 0,
+    "ein_service": 0,
+    "annual_report_online": 61.44,
+    "tax_filing_service_sample": 599,
+    "mercury_base_required_fees": 0,
+    "boi_government_filing": 0,
+    "subtotal": 785.44
+  },
+  "two_period_self_ein_subtotal": 1584.88,
+  "two_period_assisted_ein_subtotal": 1784.88,
+  "additional_cost_variables": {
+    "P": "Actual provider checkout/processing charges",
+    "F": "Fax, return fax or mailing not included in chosen service",
+    "A": "Qualifying legal-address and mail services if needed; not assumed zero",
+    "D": "Website/domain/email/phone additions or renewals if needed",
+    "B": "Bookkeeping, extra returns and professional services outside standard scope",
+    "T": "Actual US, state/local and China taxes as applicable; not assumed zero",
+    "U": "Transaction, non-base banking and operating costs",
+    "V": "Closure or exceptional remediation costs if incurred"
+  },
+  "sources": {
+    "wyoming_formation": "https://wyobiz.wyo.gov/Business/RegistrationInstr.aspx",
+    "wyoming_annual": "https://wyobiz.wyo.gov/Business/AnnualReport.aspx",
+    "provider_formation": "https://www.northwestregisteredagent.com/incorporation-service",
+    "provider_ein": "https://www.northwestregisteredagent.com/start-a-business/ein-tax-id",
+    "tax_scope": "https://hiltzikcpa.com/form-5472-filing-service/",
+    "bank_pricing": "https://mercury.com/business-banking",
+    "boi": "https://www.fincen.gov/boi"
+  }
+}
