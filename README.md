@@ -2,7 +2,9 @@
 
 从公开帖子研究到可执行的 Wyoming 单成员 LLC、EIN、Mercury 企业户操作清单。
 
-资料核验截至 **2026-10-23**；发布整理日期 **2026-10-24**。公开页面和飞书入口见 [发布信息](data/publication.json)。
+资料核验截至 **2026-10-23**；发布整理日期 **2026-10-24**。
+
+[打开在线页面](https://siuserxiaowei.github.io/mercury-registration-guide/) · [飞书汇总文档](https://vi8r050ecuz.feishu.cn/docx/Tmcedh4VAoTMeaxmuqvcewxEnKY) · [发布信息](data/publication.json)
 
 ## 从这里开始
 
