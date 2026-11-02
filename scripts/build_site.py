@@ -4,6 +4,7 @@ from pathlib import Path
 from html import escape
 from urllib.parse import urlsplit, quote
 import csv
+import hashlib
 import io
 import json
 import re
@@ -151,6 +152,9 @@ def main():
     (dist / '.nojekyll').write_text('')
     if not (dist / 'index.html').is_file():
         raise RuntimeError('Frontend index.html is not yet available')
+    frontend = dist / 'index.html'
+    asset_version = hashlib.sha256((dist / 'app.js').read_bytes()).hexdigest()[:12]
+    frontend.write_text(re.sub(r'src="app\.js(?:\?[^"]*)?"', 'src="app.js?v=' + asset_version + '"', frontend.read_text()))
     docs = ROOT / 'docs'
     docs.mkdir(exist_ok=True)
     shutil.copytree(dist, docs, dirs_exist_ok=True)

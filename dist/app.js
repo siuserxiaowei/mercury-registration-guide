@@ -79,7 +79,7 @@ We intend to use Mercury to [ACTUAL BUSINESS PURPOSES], including paying [REAL B
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
-      const response = await fetch(path, { signal: controller.signal, credentials: 'same-origin' });
+      const response = await fetch(path, { signal: controller.signal, credentials: 'same-origin', cache: 'no-cache' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return type === 'json' ? await response.json() : await response.text();
     } finally { clearTimeout(timeout); }
