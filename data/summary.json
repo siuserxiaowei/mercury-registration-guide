@@ -97,5 +97,19 @@
     "metadata_verified": "仅元数据核验",
     "blocked": "访问受阻",
     "excluded": "排除"
-  }
+  },
+  "statistics_scope": "原有统计字段保留2026-10-23初始研究口径；后续增补单列，不代表全量重核。",
+  "current_catalogue_count": 143,
+  "last_supplemented_on": "2026-11-03",
+  "supplemental_updates": [
+    {
+      "date": "2026-11-03",
+      "added_records": 1,
+      "record_ids": [
+        "X2117241567660704001"
+      ],
+      "verified_body_records": 1,
+      "note": "WquGuru美国公司注册维护帖子；不是Mercury获批个案。"
+    }
+  ]
 }

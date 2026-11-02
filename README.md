@@ -6,6 +6,8 @@
 
 [打开在线页面](https://siuserxiaowei.github.io/mercury-registration-guide/) · [飞书汇总文档](https://vi8r050ecuz.feishu.cn/docx/Tmcedh4VAoTMeaxmuqvcewxEnKY) · [发布信息](data/publication.json)
 
+2026-11-03 增补：[WquGuru 原帖](https://x.com/wquguru/status/2117241567660704001)，已读取主帖和可见作者回复并核对成本、地址与税务适用边界。当前在线目录为142条基线＋本次1条；原始统计仍截至10月23日。飞书另保留10月29日6条历史补充及[10月30日现行方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)，本次不冒称将那些历史增补全量回填网页。
+
 ## 从这里开始
 
 | 内容 | 入口 |
@@ -15,7 +17,7 @@
 | 大陆、无 SSN/ITIN、Wyoming 单成员 LLC 操作清单 | [阅读](content/checklist.md) |
 | Mercury 业务说明英文模板 | [复制模板](content/business-template.txt) |
 | 原始研究报告及证据限制 | [阅读](content/research.md) |
-| 全部 142 条来源目录 | [阅读](content/catalogue.md) · [JSON](data/catalogue.json) · [TSV](data/catalogue.tsv) |
+| 全部 143 条来源目录（含本次增补） | [阅读](content/catalogue.md) · [JSON](data/catalogue.json) · [TSV](data/catalogue.tsv) |
 | 两年预算数据 | [JSON](data/budget.json) |
 
 ## 范围与证据
@@ -39,3 +41,5 @@ python3 -m http.server 8765 --directory docs
 
 页面的待办状态和预算输入仅保存在访问者自己的浏览器，不接收护照、SSN、银行账户或申请文件。
 
+
+`export_content.py` 仅用于初始快照导入；存在后续增补时会拒绝重导出，防止覆盖增补。日常修改后只运行 `build_site.py`。

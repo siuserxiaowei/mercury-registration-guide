@@ -215,6 +215,9 @@ def dated(text):
 
 
 def export():
+    existing = REPO / 'data' / 'summary.json'
+    if existing.exists() and json.loads(existing.read_text()).get('supplemental_updates'):
+        raise SystemExit('已有后续增补，拒绝重导出初始快照；请编辑真源后仅运行 scripts/build_site.py。')
     for name in ['content', 'data']:
         (REPO / name).mkdir(parents=True, exist_ok=True)
     catalogue = json.loads((RESEARCH / 'catalogue.json').read_text())
