@@ -99,8 +99,8 @@
     "excluded": "排除"
   },
   "statistics_scope": "原有统计字段保留2026-10-23初始研究口径；后续增补单列，不代表全量重核。",
-  "current_catalogue_count": 143,
-  "last_supplemented_on": "2026-11-03",
+  "current_catalogue_count": 144,
+  "last_supplemented_on": "2026-11-05",
   "supplemental_updates": [
     {
       "date": "2026-11-03",
@@ -110,6 +110,15 @@
       ],
       "verified_body_records": 1,
       "note": "WquGuru美国公司注册维护帖子；不是Mercury获批个案。"
+    },
+    {
+      "date": "2026-11-05",
+      "added_records": 1,
+      "record_ids": [
+        "X2116385939148947601"
+      ],
+      "verified_body_records": 1,
+      "note": "GoSailGlobal 完整长文；Mercury 次日获批为作者自述，发文尚未入金。"
     }
   ]
 }

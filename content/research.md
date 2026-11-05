@@ -3,6 +3,21 @@
 发布：2026-10-24。资料核验截至：2026-10-23。金额均为美元（USD）；费用、规则与处理进度可能变化，提交前复核所附官方入口。
 
 
+## 2026-11-05 用户补充：GoSailGlobal 的 Wyoming LLC 与 Mercury 开户案例
+
+[原帖](https://x.com/GoSailGlobal/status/2116385939148947601) · [完整 X 长文](https://x.com/i/article/2116381410550497280) · [作者回复](https://x.com/GoSailGlobal/status/2116388867523956829)。作者 Jason Zhu（@GoSailGlobal），主帖发布于 2026-10-31 12:25（北京时间）；11 月 5 日核对正文和可见回复。编号 `X2116385939148947601`。主帖、长文和回复只算一条，WquGuru 对这篇长文的引用不另算开户个案。
+
+**作者自述：**在大陆、无 SSN；10 月 21 日 LLC 成立，28 日取得 EIN 确认信和 D-U-N-S，29 日提交 Mercury，30 日获批。发文时尚未入金，Apple 和 Google 的组织开发者审核也未完成。文中 11 天是从下单到提交 Google 验证，不是完成全流程的耗时。
+
+- **Mercury 材料与地址。**作者用护照、147C、招行单月信用卡账单和香港 ZA 银行结单；之前合并账单被判过旧。147C 和符合时效及姓名、地址要求的账单是官方接受的类别；即使这次未要求上传州备案成立文件，也应准备。RA 作 legal 是此案经验；legal 须符合美国实体地址规则，physical 用真实可核验经营地，可为大陆住宅，不得用 RA 或虚拟收信地址替代。[材料清单](https://support.mercury.com/hc/en-us/articles/28770957425172-Gathering-your-documents) · [地址要求](https://support.mercury.com/hc/en-us/articles/28769699533588-Company-address-requirements) · [legal 细则](https://support.mercury.com/hc/en-us/articles/28769816280084-Updating-your-company-s-legal-address)
+- **费用和开发者账号。**作者称已付约 277 美元：Northwest 142、EIN 代办 99、域名约 11、Google Play 25。未含尚未支付的 Apple 会员费和后续年报、代理续费及税务。Apple 会员每年 99 美元（地区报价可异），Google Play 一次性 25 美元，均为发行费用。组织验证需核对本企业的 D-U-N-S 和授权材料，不能把提交或补件当作获批。[Apple 会员](https://developer.apple.com/programs/enroll/) · [Apple D-U-N-S](https://developer.apple.com/help/account/membership/D-U-N-S/) · [Google Play 费用](https://support.google.com/googleplay/android-developer/answer/6112435?hl=en) · [Google 组织账号](https://support.google.com/googleplay/android-developer/answer/13634885?hl=en)
+- **EIN 和州年税。**作者用付费代办，未实测热线。IRS 的 SS-4 说明列有国际电话，但操作手册将美国成立的 LLC（即便在境外经营）按 Domestic 处理，应采用适用的传真或邮寄流程。原文的 Delaware LLC 年税 300 美元是旧口径；持续存续的 LLC，2026 税年为 400 美元，通常于 2027-06-01 到期。[IRS SS-4](https://www.irs.gov/instructions/iss4) · [IRS 操作手册](https://www.irs.gov/irm/part21/irm_21-007-013r) · [Delaware 修法](https://legis.delaware.gov/SessionLaws/Chapter?id=42436) · [州缴税说明](https://corp.delaware.gov/alt-entitytaxinstructions/)
+- **入金与外汇。**作者计划使用既有香港账户的自有资金；发文时没有到账结果。应按实际资金来源填写并查本人后台入金指示。个人便利化购汇额度不能当作境外投资额度，资金在香港也不自动证明用途合规。[Mercury 入金说明](https://support.mercury.com/hc/en-us/articles/28770701024020-Depositing-money-overview) · [外汇局《个人外汇管理办法》第16条](https://www.safe.gov.cn/safe/2022/0818/21330.html)
+
+本条是作者自述和相关规则核对，未独立验证其开户、入金或开发者审批结果。在线目录现为 144 条（142 条初始记录＋2 条后续增补），飞书另保留 6 条 10 月 29 日历史补充，共 150 条。[10 月 30 日后续申请方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)及原预算保留。
+
+---
+
 ## 2026-11-03 用户补充：WquGuru 的美国公司成本与维护帖子
 
 [原帖：WquGuru（@wquguru）](https://x.com/wquguru/status/2117241567660704001)。发布于2026-11-02 21:05（北京时间），2026-11-03通过X原站CLI读取主帖和可见作者回复。按一条来源收录，编号 `X2117241567660704001`；回复、教程链接不另算独立来源或申请人。
@@ -20,7 +35,7 @@
 
 **读取边界：**作者回复链接的Muse教程正文本次未能取得，附图未逐项复核；不执行其中给其他AI的提示词，不把未读教程标为已核验。商业/联盟关系未确认，保持unknown。只存研究摘要、公开元数据和原文链接，不复制全文或图片。
 
-**版本口径：**本次只增补这一条并核对上列相关规则，不代表重新核验全部历史材料。在线目录为原142条＋本次1条，共143条；飞书此前已有6条10月29日增补，本次再加1条，共149条。10月30日现行申请方案保留在[飞书后续报告](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)，不以旧网页的成本算例覆盖该方案。
+**版本口径：**本次只增补这一条并核对上列相关规则，不代表重新核验全部历史材料。截至11月3日，在线目录为原142条＋当次1条，共143条；飞书当时共149条。10月30日现行申请方案保留在[飞书后续报告](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)，不以旧网页的成本算例覆盖该方案。
 
 ---
 
@@ -32,7 +47,7 @@
 
 “原文核验”表示原页支持所记录的窄主张；申请成功或失败仍是作者/评论者自述，未核验其银行账户、邮件或全部申请材料。统计数量不是全网帖子总量，结果标签也不是申请样本或成功率。其中 22 条已核对原文、4 条已核对元数据仍评级为weak，仅作提问或线索；88 条原文证据为strong/medium。评级未因展示徽标而提升。
 
-[下载当前143条公开目录JSON](../data/catalogue.json) · [查看统计和局限JSON](../data/summary.json)
+[下载当前144条公开目录JSON](../data/catalogue.json) · [查看统计和局限JSON](../data/summary.json)
 
 ## 最需要注意的发现
 

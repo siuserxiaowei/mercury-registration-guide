@@ -4872,5 +4872,46 @@
       "https://x.com/wquguru/status/2117242053302313444",
       "https://muse.ai/s/llc-apple-muse-mxk63xappa4w0/1fv8TJIG5qqKTBn8by7qL-Y0AeJ_utnNUKBU6xYSmsI"
     ]
+  },
+  {
+    "id": "X2116385939148947601",
+    "title": "GoSailGlobal：无 SSN 注册 Wyoming LLC，Mercury 次日获批（自述）",
+    "url": "https://x.com/GoSailGlobal/status/2116385939148947601",
+    "canonical_url": "https://x.com/GoSailGlobal/status/2116385939148947601",
+    "alias_urls": [
+      "https://x.com/i/article/2116381410550497280"
+    ],
+    "platform": "x",
+    "domain": "x.com",
+    "author": "Jason Zhu (@GoSailGlobal)",
+    "published_at": "2026-10-31",
+    "date_basis": "原站主帖 createdAtISO 为 2026-10-31T04:25:03+00:00，北京时间 12:25。",
+    "content_type": "Wyoming LLC、Mercury 和开发者组织账号第一人称长文",
+    "language": "zh-CN",
+    "accessed_at": "2026-11-05",
+    "read_status": "read",
+    "findings": "作者自述在大陆、无 SSN，成立 Wyoming 单成员 LLC 后于 10 月 29 日申请 Mercury、30 日获批；材料包括 147C、近期信用卡账单和自有资金银行结单。发文未入金，Apple、Google 组织开发者审核未完成。",
+    "commercial": "unknown",
+    "registration_outcome": "approved",
+    "limitations": "仅核验原文和可见回复，未独立验证开户、具体地址接收、入金或开发者审批。费用和材料属个案；代办报价不是 IRS 官费，勿用注册代理地址替代真实经营地。",
+    "content_cluster_key": "https://x.com/GoSailGlobal/status/2116385939148947601",
+    "dedupe_reason": "主帖、长文和回复归一条；WquGuru 的引用不是第二个开户个案。",
+    "curator_status": "verified",
+    "date_conflict": [],
+    "curator_note": "2026-11-05 用户补充；经 X 原站 CLI 读取完整 Article 和可见回复。获批为作者自述。",
+    "curator_claim": "作者自述在大陆、无 SSN，成立 Wyoming 单成员 LLC 后于 10 月 29 日申请 Mercury、30 日获批；材料包括 147C、近期信用卡账单和自有资金银行结单。发文未入金，Apple、Google 组织开发者审核未完成。",
+    "curator_observation": "主帖关联完整长文，作者回复称一次通过；原文发文时未入金，两家开发者验证未完成。",
+    "evidence_grade": "medium",
+    "reviewed_source_url": "https://x.com/i/article/2116381410550497280",
+    "review_limitations": "仅核验原文和可见回复，未独立验证开户、具体地址接收、入金或开发者审批。费用和材料属个案；代办报价不是 IRS 官费，勿用注册代理地址替代真实经营地。",
+    "review_date_basis": "主帖原站发布时间与本次读取日分别记录；办理时间线为作者自述。",
+    "decision_support": false,
+    "added_on": "2026-11-05",
+    "source_origin": "user_provided",
+    "related_urls": [
+      "https://x.com/i/article/2116381410550497280",
+      "https://x.com/GoSailGlobal/status/2116388867523956829",
+      "https://x.com/wquguru/status/2117241567660704001"
+    ]
   }
 ]

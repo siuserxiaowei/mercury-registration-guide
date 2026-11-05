@@ -197,3 +197,7 @@ We intend to use Mercury to [ACTUAL BUSINESS PURPOSES], including paying [REAL B
 [WquGuru的美国公司注册维护帖](https://x.com/wquguru/status/2117241567660704001)已收录。它补充App出海的成本视角，未提供可核验的Mercury获批结果。注册153美元的含项及年度全包成本未确认；苹果会员属于App发行成本，不能并作银行开户必要费用。
 
 本次核对提示：穿透LLC不自动零税；中国税务不能一律套20%；5472罚款须对应实际申报义务；RA不能替代真实physical地址，亦不能保证个人资料绝不公开。详见[研究正文中的2026-11-03增补](research.md)，附IRS、税务总局、Wyoming及Mercury官方依据。本次不改既定采购方案、旧预算假设或全部规则核验日。
+
+## 2026-11-05 补充：GoSailGlobal 开户个案
+
+[原帖](https://x.com/GoSailGlobal/status/2116385939148947601)。可参考其准备 147C、州备案成立文件、运营协议、近期住址证明与真实资金来源材料；跨月账单被判过旧是个案。开户获批、实际入金和开发者验证应分别确认。 见[案例与官方核对](research.md)。

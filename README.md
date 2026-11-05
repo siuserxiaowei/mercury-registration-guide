@@ -6,7 +6,7 @@
 
 [打开在线页面](https://siuserxiaowei.github.io/mercury-registration-guide/) · [飞书汇总文档](https://vi8r050ecuz.feishu.cn/docx/Tmcedh4VAoTMeaxmuqvcewxEnKY) · [发布信息](data/publication.json)
 
-2026-11-03 增补：[WquGuru 原帖](https://x.com/wquguru/status/2117241567660704001)，已读取主帖和可见作者回复并核对成本、地址与税务适用边界。当前在线目录为142条基线＋本次1条；原始统计仍截至10月23日。飞书另保留10月29日6条历史补充及[10月30日现行方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)，本次不冒称将那些历史增补全量回填网页。
+2026-11-05 增补：[GoSailGlobal 原帖](https://x.com/GoSailGlobal/status/2116385939148947601)，记录其自述次日获批及费用、地址与入金边界；保留 11-03 的 [WquGuru 来源](https://x.com/wquguru/status/2117241567660704001)。在线为142条基线＋2条后续增补；飞书还保留10-29的6条历史增补和[10-30后续方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)。
 
 ## 从这里开始
 
@@ -17,7 +17,7 @@
 | 大陆、无 SSN/ITIN、Wyoming 单成员 LLC 操作清单 | [阅读](content/checklist.md) |
 | Mercury 业务说明英文模板 | [复制模板](content/business-template.txt) |
 | 原始研究报告及证据限制 | [阅读](content/research.md) |
-| 全部 143 条来源目录（含本次增补） | [阅读](content/catalogue.md) · [JSON](data/catalogue.json) · [TSV](data/catalogue.tsv) |
+| 全部 144 条来源目录（含两次增补） | [阅读](content/catalogue.md) · [JSON](data/catalogue.json) · [TSV](data/catalogue.tsv) |
 | 两年预算数据 | [JSON](data/budget.json) |
 
 ## 范围与证据
