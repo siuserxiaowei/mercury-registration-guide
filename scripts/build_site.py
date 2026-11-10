@@ -9,8 +9,71 @@ import io
 import json
 import re
 import shutil
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+STAGE_TITLE = '我现在卡在哪一步？'
+
+
+def stage_guide_data():
+    return json.loads((ROOT / 'data/stages.json').read_text())
+
+
+def stage_link(label, url, web=False):
+    attrs = ' target="_blank" rel="noopener noreferrer"' if web else ''
+    return f'<a href="{escape(url, quote=True)}"{attrs}>{escape(label)}</a>'
+
+
+def stage_list(items):
+    return '<ul>' + ''.join(f'<li>{item}</li>' for item in items) + '</ul>'
+
+
+def render_stage_guide(guide):
+    options, cards = [], []
+    for index, stage in enumerate(guide['stages']):
+        key = escape(stage['id'], quote=True)
+        label = escape(stage['label'])
+        checked = ' checked' if index == 0 else ''
+        options.append(f'<label class="stage-option"><input type="radio" name="handbook-stage" aria-controls="stage-{key}"{checked}><span>{label}</span></label>')
+        materials = stage_list(escape(item) for item in stage['materials'])
+        links = stage_list(stage_link(*link, web=True) for link in stage['links'])
+        cards.append(f'<article class="stage-result" id="stage-{key}" aria-labelledby="stage-title-{key}">'
+                     f'<div class="stage-result-head"><h3 id="stage-title-{key}">{label}</h3>'
+                     f'<p><strong>下一步：</strong>{escape(stage["next"])}</p></div>'
+                     f'<div class="stage-result-grid"><div class="stage-materials"><h4>还缺哪些材料？</h4>{materials}</div>'
+                     f'<div class="stage-links"><h4>官方入口</h4>{links}</div></div>'
+                     f'<p class="stage-note">{escape(stage["note"])}</p></article>')
+    return '\n'.join([
+        '<section id="stage-guide" class="stage-guide observed-section" aria-labelledby="stage-guide-title">',
+        f'  <div class="section-heading"><div><span class="section-kicker">01 / 按进度找下一步</span><h2 id="stage-guide-title">{STAGE_TITLE}</h2></div><p>{escape(guide["scope"])}</p></div>',
+        '  <div class="stage-guide-shell">',
+        '    <fieldset class="stage-picker" id="stage-picker" aria-describedby="stage-guide-note" hidden><legend>选择你的进度</legend>',
+        *('      ' + option for option in options),
+        '    </fieldset>',
+        '    <div class="stage-results" id="stage-results">',
+        *('      ' + card for card in cards),
+        '    </div>',
+        '  </div>',
+        '  <p id="stage-status" class="sr-only" role="status"></p>',
+        f'  <p class="stage-guide-note" id="stage-guide-note">无需填写个人信息；此处的选择不保存、不上传。入口核对于 {escape(guide["verified_on"])}。<a href="#read-checklist">查看完整操作清单</a></p>',
+        '</section>',
+    ])
+
+
+def render_feishu_stage(guide):
+    page = json.loads((ROOT / 'data/publication.json').read_text())['page_url']
+    blocks = [f'<h2>{STAGE_TITLE}</h2>',
+              f'<p>{escape(guide["scope"])} 入口核对于 {escape(guide["verified_on"])}。'
+              f'{stage_link("打开在线交互清单", page + "#stage-guide")}（无需填写个人信息；选择不保存、不上传）。</p>']
+    for stage in guide['stages']:
+        materials = stage_list(escape(item) for item in stage['materials'])
+        links = ' · '.join(stage_link(*link) for link in stage['links'])
+        blocks.extend([f'<h3>{escape(stage["label"])}</h3>',
+                       f'<p><b>下一步：</b>{escape(stage["next"])}</p>',
+                       f'<p><b>还缺哪些材料？</b></p>{materials}',
+                       f'<p><b>官方入口：</b>{links}</p>',
+                       f'<p>{escape(stage["note"])}</p>'])
+    return '\n'.join(blocks)
 
 
 def safe_url(value):
@@ -153,8 +216,15 @@ def main():
     if not (dist / 'index.html').is_file():
         raise RuntimeError('Frontend index.html is not yet available')
     frontend = dist / 'index.html'
-    asset_version = hashlib.sha256((dist / 'app.js').read_bytes()).hexdigest()[:12]
-    frontend.write_text(re.sub(r'src="app\.js(?:\?[^"]*)?"', 'src="app.js?v=' + asset_version + '"', frontend.read_text()))
+    html = frontend.read_text()
+    html, count = re.subn(r'(<!-- stage-guide:start -->).*?(<!-- stage-guide:end -->)',
+                         lambda m: m[1] + '\n' + render_stage_guide(stage_guide_data()) + '\n      ' + m[2], html, flags=re.S)
+    if count != 1:
+        raise RuntimeError('Expected one stage guide placeholder')
+    for attr, asset in [('src', 'app.js'), ('href', 'styles.css')]:
+        version = hashlib.sha256((dist / asset).read_bytes()).hexdigest()[:12]
+        html = re.sub(rf'{attr}="{re.escape(asset)}(?:\?[^"]*)?"', f'{attr}="{asset}?v={version}"', html)
+    frontend.write_text(html)
     docs = ROOT / 'docs'
     docs.mkdir(exist_ok=True)
     shutil.copytree(dist, docs, dirs_exist_ok=True)
@@ -162,4 +232,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    if sys.argv[1:] == ['--feishu-stage-xml']:
+        print(render_feishu_stage(stage_guide_data()))
+    else:
+        main()

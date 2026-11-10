@@ -6,6 +6,8 @@
 
 这是一份准备和提交清单，尚未替你注册、付费或递交。方括号均须换成真实信息。SS-4 的业务示例不代表你的实际业务。
 
+想先看当前最该做什么？打开首页的[「我现在卡在哪一步？」](https://siuserxiaowei.github.io/mercury-registration-guide/#stage-guide)，选择进度即可查看下一步、需核对的材料和官方入口。
+
 ## 先确认的三件事
 
 - [ ] 能用一句话说明卖什么、卖给谁、怎样收费，以及现有或计划中的美国业务。
@@ -51,7 +53,7 @@ Mercury 的公司法定地址必须符合其美国实体地点要求，不能是
 - [ ] 传真之外的备选邮寄地址，在本路线下为 Internal Revenue Service, Attn: EIN International Operation, Cincinnati, OH 45999；只选一种申请方式，不同时重复提交。
 - [ ] 保存回传 EIN、后续 CP575；需要时向 IRS 索取 147C，不把普通号码截图自动当成银行认可证明。
 
-当前进度：传真约收到后 8 个工作日处理，纸件收到后 30 天内处理；不含你准备材料、跨境邮件、补件及证明送达时间。[IRS 当前进度](https://www.irs.gov/help/processing-status-for-tax-forms)
+等待时间：查 [IRS 当前处理进度](https://www.irs.gov/help/processing-status-for-tax-forms)的 Form SS-4 项。IRS 所列时间从收到申请起算；不含你准备材料、跨境邮件、补件及证明送达时间。
 
 两项官网口径细节：IRS 总览虽按境外主要经营地概述国际电话申请，但更新的操作手册将美国成立 LLC 归为 Domestic，并要求国际热线转告其他申请方式，因此本清单采用传真/邮寄，不依赖电话即时发号。IRS 当前亦称传真回传的是含 EIN 的封面，已不再返回标注 EIN 的 SS-4。[IRS 操作手册，21.7.13.3.2.7 与 21.7.13.7.1](https://www.irs.gov/irm/part21/irm_21-007-013r)、[EIN 总览](https://www.irs.gov/businesses/employer-identification-number)
 

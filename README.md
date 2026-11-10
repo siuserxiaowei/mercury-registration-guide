@@ -6,6 +6,8 @@
 
 [打开在线页面](https://siuserxiaowei.github.io/mercury-registration-guide/) · [飞书汇总文档](https://vi8r050ecuz.feishu.cn/docx/Tmcedh4VAoTMeaxmuqvcewxEnKY) · [发布信息](data/publication.json)
 
+从[「我现在卡在哪一步？」](https://siuserxiaowei.github.io/mercury-registration-guide/#stage-guide)选当前进度，查看下一步、需准备的材料和官方入口。选择只在当前页面处理，不上传或保存。
+
 2026-11-05 增补：[GoSailGlobal 原帖](https://x.com/GoSailGlobal/status/2116385939148947601)，记录其自述次日获批及费用、地址与入金边界；保留 11-03 的 [WquGuru 来源](https://x.com/wquguru/status/2117241567660704001)。截至11-05，在线为142条基线＋2条后续增补；飞书还保留10-29的6条历史增补和[10-30后续方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)。
 
 2026-11-10 增补：[UPTHOS 创业额度对比](https://tools.upthos.com/startup-credits)，作为开户后经营资源，附选定项目的官方资格与抵扣边界。在线目录现为145条。
@@ -40,6 +42,8 @@ python3 -m http.server 8765 --directory docs
 ```
 
 `content/` 为 Markdown 真源，`data/` 为公开研究数据，`dist/` 为静态构建结果，`docs/` 为 GitHub Pages 发布目录。修改后重新构建并提交，Pages 从 `main:/docs` 发布。
+
+首页进度清单以 [`data/stages.json`](data/stages.json) 为准。`python3 scripts/build_site.py --feishu-stage-xml` 可导出同一份清单的飞书静态版。
 
 页面的待办状态和预算输入仅保存在访问者自己的浏览器，不接收护照、SSN、银行账户或申请文件。
 

@@ -454,6 +454,30 @@ We intend to use Mercury to [ACTUAL BUSINESS PURPOSES], including paying [REAL B
     }
   }
 
+  function initStageGuide() {
+    const picker = $('#stage-picker');
+    const results = $('#stage-results');
+    const status = $('#stage-status');
+    if (!picker || !results || !status) return;
+    const radios = Array.from(picker.querySelectorAll('input[type="radio"]'));
+    const cards = Array.from(results.querySelectorAll('.stage-result'));
+
+    function showStage(radio, announce) {
+      const active = cards.find(card => card.id === radio.getAttribute('aria-controls'));
+      if (!active) return;
+      cards.forEach(card => { card.hidden = card !== active; });
+      if (announce) status.textContent = `已显示：${active.querySelector('h3').textContent}。`;
+    }
+
+    const initial = radios.find(radio => radio.checked);
+    if (!initial) return;
+    showStage(initial, false);
+    picker.addEventListener('change', event => {
+      if (radios.includes(event.target) && event.target.checked) showStage(event.target, true);
+    });
+    picker.hidden = false;
+  }
+
   $('#filter-form').addEventListener('submit', event => event.preventDefault());
   $('#filter-form').addEventListener('reset', () => { requestAnimationFrame(() => filterCatalogue()); });
   $('#search-input').addEventListener('input', () => filterCatalogue());
@@ -461,6 +485,6 @@ We intend to use Mercury to [ACTUAL BUSINESS PURPOSES], including paying [REAL B
   $('#load-more').addEventListener('click', () => { state.limit += 30; renderCatalogue(); });
   $('#print-button').addEventListener('click', () => window.print());
   $('#copy-template').addEventListener('click', copyTemplate);
-  initExtras(); initChecklist(); initSources(); initNavigation();
+  initStageGuide(); initExtras(); initChecklist(); initSources(); initNavigation();
   Promise.allSettled([loadSummary(), loadPublications(), loadReading(), loadCatalogue(), loadBudget(), loadTemplate()]);
 })();
