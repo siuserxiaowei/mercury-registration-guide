@@ -177,6 +177,8 @@ We intend to use Mercury to [ACTUAL BUSINESS PURPOSES], including paying [REAL B
 
 ## 最后把这些事项放进日历
 
+打开[怀俄明 LLC 合规日历](https://siuserxiaowei.github.io/mercury-registration-guide/#compliance-calendar)，按州登记档案填写成立日期，查看未来 24 个月的州年报、代理续费核对和适用的 Form 5472 提醒。日期只在浏览器计算，可下载 `.ics` 导入日历。
+
 - [ ] LLC 成立后立即：记录第一税年的截止日、代理续费日、第一份州年报到期日。
 - [ ] 日历年度 2026 的适用联邦申报：通常 2027-04-15 前处理；需延期应在原截止日前提交适当延期，未来年度按当年节假日顺延规则核对。
 - [ ] 例如 2026-10-23 成立：首份 Wyoming 年报 2027-10-01 前处理；后续同为周年月份 1 日。

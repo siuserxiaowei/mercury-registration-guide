@@ -1,0 +1,23 @@
+<details id="compliance-calendar" class="compliance-calendar" open>
+  <summary>合规日历</summary>
+  <div class="compliance-calendar-body">
+    <p>填成立日期，生成未来 24 个月的维护事项（从怀俄明当地今天起算）。适用于外国人全资持有、按默认税务分类且使用自然年的怀俄明单成员 LLC。已过日期不在结果里，请另行核对。</p>
+    <form class="calendar-form" autocomplete="off" hidden>
+      <div class="calendar-fields">
+        <label>LLC 成立日期 <input id="calendar-formation" type="date" min="1900-01-01" autocomplete="off" aria-describedby="calendar-formation-help" required><small id="calendar-formation-help">以怀俄明州登记档案的成立日期为准。</small></label>
+        <label>Form 5472 是否适用 <select id="calendar-tax" aria-describedby="calendar-tax-help"><option value="review">未确认，提醒我核对</option><option value="due">确认适用，加入常规截止日</option><option value="none">确认不适用，不加入</option></select><small id="calendar-tax-help">成立、出资、代垫或分配也可能是应报告交易；没有收入不代表不适用。</small></label>
+        <label>代理下次续费日期（选填） <input id="calendar-agent" type="date" autocomplete="off" aria-describedby="calendar-agent-help"><small id="calendar-agent-help">有账单就填账单日期；留空时按成立周年安排核对提醒。</small></label>
+      </div>
+      <p class="calendar-help">日期仅在当前浏览器计算，不上传、不写入浏览器存储。</p>
+      <button class="outline-button" type="submit">生成日历</button>
+    </form>
+    <noscript><p>启用 JavaScript 后可在浏览器里计算并下载日历；也可以用下方官方入口手动核对日期。</p></noscript>
+    <p class="calendar-status" role="status"></p>
+    <div class="calendar-output" hidden>
+      <ol class="calendar-events" aria-label="未来 24 个月的合规事项"></ol>
+      <button class="outline-button calendar-download" type="button">下载日历（.ics）</button>
+      <p class="calendar-help">导入后为全天事项。可在手机日历里设置通知；<a href="https://support.google.com/calendar/answer/37118" target="_blank" rel="noopener noreferrer">Google 日历在电脑网页版导入</a>，再同步到手机。</p>
+    </div>
+    <!-- calendar-rules -->
+  </div>
+</details>

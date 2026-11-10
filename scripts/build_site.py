@@ -13,6 +13,12 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 STAGE_TITLE = '我现在卡在哪一步？'
+CALENDAR_RULES = [
+    ('怀俄明州年报', '从成立次年开始，每年在成立周年月的 1 日到期；周末也按州务卿所列日期。若文件提交日与生效日不同，以州登记档案显示的到期日为准。', '州务卿年报说明', 'https://sos.wyo.gov/faqs.aspx?root=BUS'),
+    ('注册代理续费', '有账单日期就按所填日期加入一次。没有账单日期，就在成立周年前约 30 天提醒核对；估算不是实际续费截止日。', '州务卿注册代理说明', 'https://sos.wyo.gov/Business/Docs/HowToFindOrBecomeARegisteredAgent.pdf'),
+    ('Form 5472', '仅在适用税年有应报告交易时才需与形式 Form 1120 一起提交。自然年常规期限为次年 4 月 15 日，遇周末或华盛顿特区解放日假期顺延。未确认适用时只安排核对提醒；本日历不计算 Form 7004 延期、个别 IRS 救济或非自然年。', 'IRS Form 5472 说明', 'https://www.irs.gov/instructions/i5472'),
+]
+CALENDAR_DUE_SOURCE = ('IRS Form 1120 截止日规则', 'https://www.irs.gov/instructions/i1120')
 
 
 def stage_guide_data():
@@ -28,6 +34,28 @@ def stage_list(items):
     return '<ul>' + ''.join(f'<li>{item}</li>' for item in items) + '</ul>'
 
 
+def calendar_rules(web=False):
+    items = [f'<b>{label}：</b>{escape(text)} {stage_link(name, url, web)}'
+             for label, text, name, url in CALENDAR_RULES]
+    items[-1] += ' · ' + stage_link(*CALENDAR_DUE_SOURCE, web=web)
+    return stage_list(items).replace('<ul>', '<ul class="calendar-sources">', 1) if web else stage_list(items)
+
+
+def render_calendar():
+    template = (ROOT / 'content/compliance-calendar.html').read_text()
+    return template.replace('<!-- calendar-rules -->', calendar_rules(web=True)).strip()
+
+
+def render_feishu_calendar():
+    page = json.loads((ROOT / 'data/publication.json').read_text())['page_url']
+    return '\n'.join([
+        '<h4>合规日历：生成提醒并导入手机</h4>',
+        f'<p>{stage_link("打开怀俄明 LLC 合规日历", page + "#compliance-calendar")}。填州登记档案上的成立日期，选 Form 5472 适用状态；如有代理账单，可填写下次续费日期。工具列出未来 24 个月的事项。</p>',
+        calendar_rules(),
+        f'<p>日期只在浏览器本地计算，不上传、不写入浏览器存储。生成后下载 .ics，再导入支持该格式的日历，通知按手机日历设置。{stage_link("Google 日历导入说明", "https://support.google.com/calendar/answer/37118")}。已过日期不在结果里，仍应核对是否办结。</p>',
+    ])
+
+
 def render_stage_guide(guide):
     options, cards = [], []
     for index, stage in enumerate(guide['stages']):
@@ -37,12 +65,13 @@ def render_stage_guide(guide):
         options.append(f'<label class="stage-option"><input type="radio" name="handbook-stage" aria-controls="stage-{key}"{checked}><span>{label}</span></label>')
         materials = stage_list(escape(item) for item in stage['materials'])
         links = stage_list(stage_link(*link, web=True) for link in stage['links'])
+        calendar = '\n' + render_calendar() if stage['id'] == 'maintain' else ''
         cards.append(f'<article class="stage-result" id="stage-{key}" aria-labelledby="stage-title-{key}">'
                      f'<div class="stage-result-head"><h3 id="stage-title-{key}">{label}</h3>'
                      f'<p><strong>下一步：</strong>{escape(stage["next"])}</p></div>'
                      f'<div class="stage-result-grid"><div class="stage-materials"><h4>还缺哪些材料？</h4>{materials}</div>'
                      f'<div class="stage-links"><h4>官方入口</h4>{links}</div></div>'
-                     f'<p class="stage-note">{escape(stage["note"])}</p></article>')
+                     f'<p class="stage-note">{escape(stage["note"])}</p>{calendar}</article>')
     return '\n'.join([
         '<section id="stage-guide" class="stage-guide observed-section" aria-labelledby="stage-guide-title">',
         f'  <div class="section-heading"><div><span class="section-kicker">01 / 按进度找下一步</span><h2 id="stage-guide-title">{STAGE_TITLE}</h2></div><p>{escape(guide["scope"])}</p></div>',
@@ -221,7 +250,7 @@ def main():
                          lambda m: m[1] + '\n' + render_stage_guide(stage_guide_data()) + '\n      ' + m[2], html, flags=re.S)
     if count != 1:
         raise RuntimeError('Expected one stage guide placeholder')
-    for attr, asset in [('src', 'app.js'), ('href', 'styles.css')]:
+    for attr, asset in [('src', 'app.js'), ('src', 'calendar-ics.js'), ('src', 'compliance-calendar.js'), ('href', 'styles.css')]:
         version = hashlib.sha256((dist / asset).read_bytes()).hexdigest()[:12]
         html = re.sub(rf'{attr}="{re.escape(asset)}(?:\?[^"]*)?"', f'{attr}="{asset}?v={version}"', html)
     frontend.write_text(html)
@@ -234,5 +263,7 @@ def main():
 if __name__ == '__main__':
     if sys.argv[1:] == ['--feishu-stage-xml']:
         print(render_feishu_stage(stage_guide_data()))
+    elif sys.argv[1:] == ['--feishu-calendar-xml']:
+        print(render_feishu_calendar())
     else:
         main()

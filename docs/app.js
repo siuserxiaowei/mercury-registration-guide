@@ -476,6 +476,19 @@ We intend to use Mercury to [ACTUAL BUSINESS PURPOSES], including paying [REAL B
       if (radios.includes(event.target) && event.target.checked) showStage(event.target, true);
     });
     picker.hidden = false;
+
+    function openCalendarLink() {
+      if (location.hash !== '#compliance-calendar') return;
+      const calendar = $('#compliance-calendar');
+      const maintenance = radios.find(radio => radio.getAttribute('aria-controls') === 'stage-maintain');
+      if (!calendar || !maintenance) return;
+      maintenance.checked = true;
+      showStage(maintenance, false);
+      calendar.open = true;
+      requestAnimationFrame(() => calendar.scrollIntoView());
+    }
+    window.addEventListener('hashchange', openCalendarLink);
+    openCalendarLink();
   }
 
   $('#filter-form').addEventListener('submit', event => event.preventDefault());

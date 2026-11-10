@@ -190,3 +190,129 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.compliance-calendar {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.compliance-calendar > summary {
+  min-height: 44px;
+  padding: 12px 18px;
+  background: var(--mint);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.compliance-calendar-body {
+  min-width: 0;
+  padding: clamp(14px, 3vw, 24px);
+  overflow-wrap: anywhere;
+}
+
+.compliance-calendar-body p {
+  margin: 0 0 12px;
+  font-size: 13px;
+}
+
+.calendar-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 178px), 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.calendar-fields label {
+  min-width: 0;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.calendar-fields :is(input, select) {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin-top: 4px;
+  padding: 7px 9px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.compliance-calendar .outline-button {
+  min-height: 44px;
+  font-size: 13px;
+}
+
+.calendar-help,
+.calendar-sources {
+  color: var(--muted);
+}
+
+.compliance-calendar-body .calendar-status {
+  margin: 12px 0 0;
+  color: var(--ink);
+}
+
+.calendar-status:empty {
+  margin: 0;
+}
+
+.calendar-output {
+  margin-top: 14px;
+}
+
+.calendar-events,
+.calendar-sources {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.calendar-event {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 5px 14px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.calendar-event time {
+  align-self: start;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.compliance-calendar-body .calendar-event p {
+  margin: 2px 0 0;
+}
+
+.calendar-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 14px;
+  margin: 14px 0 0;
+  font-size: 12px;
+}
+
+.compliance-calendar-body a {
+  color: #285947;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 430px) {
+  .calendar-event {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
