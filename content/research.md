@@ -3,6 +3,17 @@
 发布：2026-10-24。资料核验截至：2026-10-23。金额均为美元（USD）；费用、规则与处理进度可能变化，提交前复核所附官方入口。
 
 
+## 2026-11-10 补充：开户后的创业额度与合作福利
+
+[UPTHOS 创业额度对比](https://tools.upthos.com/startup-credits)把 17 个项目按自筹直申、合作渠道、融资要求和暂停状态整理。页面标注 2026-11-07 核对，本文于 2026-11-10 阅读并复核下列项目。它适合作为选项索引；优惠不计作收入、开户证据或确定可扣减的预算。
+
+- **先看实际会用的服务。**[Cloudflare 自筹档](https://www.cloudflare.com/startups/)为 10,000 美元合资格用量额度，须审批；[AWS Activate Founders](https://aws.amazon.com/startups/credits/)面向自筹团队，通常从 1,000 美元开始，只有部分参与者可提高到 5,000 美元，申请需付费账户方案。[PostHog](https://posthog.com/startups)的 50,000 美元是 12 个月内的产品用量额度，有公司年龄、融资及邮箱等限制，部分 AI 用量不适用。
+- **Microsoft 有分阶段的标准路径。**[Microsoft 官方 FAQ](https://learn.microsoft.com/en-us/startups/microsoft-for-startups/program-faqs)说明可不经投资方推荐申请初始额度，企业验证后可解锁更多；[标准计划里程碑](https://learn.microsoft.com/en-us/startups/standard-benefits/unlock-more-benefits)还包括随持续用量提高额度。高档位不是初始额度，也不全都要求投资人推荐。
+- **合作福利逐项核对。**已有 Mercury 账户可先看 [Mercury Perks](https://mercury.com/perks)，获批的 Atlas 创始人可在 [Stripe Atlas Perks](https://support.stripe.com/questions/stripe-atlas-perks-partners)查看合作福利。以各项目的领取规则为准，不默认同一服务可跨渠道叠加。[Mercury 的 AWS 规则](https://mercury.com/perks/aws)说明，过去已获额度会影响新申请，获批后可能仅补差额。[Mercury 的 GitHub 单项规则](https://mercury.com/perks/github)明确要求外部股权融资并排除自筹团队，Mercury 开户本身不能替代这项资格。
+- **申请和记账分开。**按真实主体、总部、运营及账单信息填表，不能仅凭美国注册地推定地区资格。开通付费方案前先核对抵扣范围、到期时间及超额收费，预算只计已确认可抵扣、实际用得上的部分。第三方页面的合计金额不作可领取金额预测。
+
+---
+
 ## 2026-11-05 用户补充：GoSailGlobal 的 Wyoming LLC 与 Mercury 开户案例
 
 [原帖](https://x.com/GoSailGlobal/status/2116385939148947601) · [完整 X 长文](https://x.com/i/article/2116381410550497280) · [作者回复](https://x.com/GoSailGlobal/status/2116388867523956829)。作者 Jason Zhu（@GoSailGlobal），主帖发布于 2026-10-31 12:25（北京时间）；11 月 5 日核对正文和可见回复。编号 `X2116385939148947601`。主帖、长文和回复只算一条，WquGuru 对这篇长文的引用不另算开户个案。
@@ -14,7 +25,7 @@
 - **EIN 和州年税。**作者用付费代办，未实测热线。IRS 的 SS-4 说明列有国际电话，但操作手册将美国成立的 LLC（即便在境外经营）按 Domestic 处理，应采用适用的传真或邮寄流程。原文的 Delaware LLC 年税 300 美元是旧口径；持续存续的 LLC，2026 税年为 400 美元，通常于 2027-06-01 到期。[IRS SS-4](https://www.irs.gov/instructions/iss4) · [IRS 操作手册](https://www.irs.gov/irm/part21/irm_21-007-013r) · [Delaware 修法](https://legis.delaware.gov/SessionLaws/Chapter?id=42436) · [州缴税说明](https://corp.delaware.gov/alt-entitytaxinstructions/)
 - **入金与外汇。**作者计划使用既有香港账户的自有资金；发文时没有到账结果。应按实际资金来源填写并查本人后台入金指示。个人便利化购汇额度不能当作境外投资额度，资金在香港也不自动证明用途合规。[Mercury 入金说明](https://support.mercury.com/hc/en-us/articles/28770701024020-Depositing-money-overview) · [外汇局《个人外汇管理办法》第16条](https://www.safe.gov.cn/safe/2022/0818/21330.html)
 
-本条是作者自述和相关规则核对，未独立验证其开户、入金或开发者审批结果。在线目录现为 144 条（142 条初始记录＋2 条后续增补），飞书另保留 6 条 10 月 29 日历史补充，共 150 条。[10 月 30 日后续申请方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)及原预算保留。
+本条是作者自述和相关规则核对，未独立验证其开户、入金或开发者审批结果。截至 11 月 5 日，在线目录为 144 条（142 条初始记录＋2 条后续增补），飞书另保留 6 条 10 月 29 日历史补充，共 150 条。[10 月 30 日后续申请方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)及原预算保留。
 
 ---
 
@@ -47,7 +58,7 @@
 
 “原文核验”表示原页支持所记录的窄主张；申请成功或失败仍是作者/评论者自述，未核验其银行账户、邮件或全部申请材料。统计数量不是全网帖子总量，结果标签也不是申请样本或成功率。其中 22 条已核对原文、4 条已核对元数据仍评级为weak，仅作提问或线索；88 条原文证据为strong/medium。评级未因展示徽标而提升。
 
-[下载当前144条公开目录JSON](../data/catalogue.json) · [查看统计和局限JSON](../data/summary.json)
+[下载当前145条公开目录JSON](../data/catalogue.json) · [查看统计和局限JSON](../data/summary.json)
 
 ## 最需要注意的发现
 

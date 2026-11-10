@@ -6,7 +6,9 @@
 
 [打开在线页面](https://siuserxiaowei.github.io/mercury-registration-guide/) · [飞书汇总文档](https://vi8r050ecuz.feishu.cn/docx/Tmcedh4VAoTMeaxmuqvcewxEnKY) · [发布信息](data/publication.json)
 
-2026-11-05 增补：[GoSailGlobal 原帖](https://x.com/GoSailGlobal/status/2116385939148947601)，记录其自述次日获批及费用、地址与入金边界；保留 11-03 的 [WquGuru 来源](https://x.com/wquguru/status/2117241567660704001)。在线为142条基线＋2条后续增补；飞书还保留10-29的6条历史增补和[10-30后续方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)。
+2026-11-05 增补：[GoSailGlobal 原帖](https://x.com/GoSailGlobal/status/2116385939148947601)，记录其自述次日获批及费用、地址与入金边界；保留 11-03 的 [WquGuru 来源](https://x.com/wquguru/status/2117241567660704001)。截至11-05，在线为142条基线＋2条后续增补；飞书还保留10-29的6条历史增补和[10-30后续方案](https://vi8r050ecuz.feishu.cn/docx/XHDfdPFIYoRn4wxelTLcK2OjnTc)。
+
+2026-11-10 增补：[UPTHOS 创业额度对比](https://tools.upthos.com/startup-credits)，作为开户后经营资源，附选定项目的官方资格与抵扣边界。在线目录现为145条。
 
 ## 从这里开始
 
@@ -17,7 +19,7 @@
 | 大陆、无 SSN/ITIN、Wyoming 单成员 LLC 操作清单 | [阅读](content/checklist.md) |
 | Mercury 业务说明英文模板 | [复制模板](content/business-template.txt) |
 | 原始研究报告及证据限制 | [阅读](content/research.md) |
-| 全部 144 条来源目录（含两次增补） | [阅读](content/catalogue.md) · [JSON](data/catalogue.json) · [TSV](data/catalogue.tsv) |
+| 全部 145 条来源目录（含三次增补） | [阅读](content/catalogue.md) · [JSON](data/catalogue.json) · [TSV](data/catalogue.tsv) |
 | 两年预算数据 | [JSON](data/budget.json) |
 
 ## 范围与证据

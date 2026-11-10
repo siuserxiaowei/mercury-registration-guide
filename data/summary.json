@@ -99,8 +99,8 @@
     "excluded": "排除"
   },
   "statistics_scope": "原有统计字段保留2026-10-23初始研究口径；后续增补单列，不代表全量重核。",
-  "current_catalogue_count": 144,
-  "last_supplemented_on": "2026-11-05",
+  "current_catalogue_count": 145,
+  "last_supplemented_on": "2026-11-10",
   "supplemental_updates": [
     {
       "date": "2026-11-03",
@@ -119,6 +119,15 @@
       ],
       "verified_body_records": 1,
       "note": "GoSailGlobal 完整长文；Mercury 次日获批为作者自述，发文尚未入金。"
+    },
+    {
+      "date": "2026-11-10",
+      "added_records": 1,
+      "record_ids": [
+        "W5a83b605972e"
+      ],
+      "verified_body_records": 1,
+      "note": "UPTHOS 创业额度对比，归类为开户后经营资源，非开户个案。"
     }
   ]
 }

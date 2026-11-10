@@ -119,3 +119,7 @@ Mercury FAQ允许EIN待批时用完整SS-4申请，获批90天内补正式EIN；
 ## 2026-11-05 补充：GoSailGlobal 开户个案
 
 [原帖](https://x.com/GoSailGlobal/status/2116385939148947601)。作者自述发文时实付约 277 美元，含 Google Play 一次性注册费，未含 Apple 未付会员费和后续维护与税务。EIN 为 99 美元代办，未实测电话；美国成立 LLC 的电话限制及 Delaware LLC 新年税按官方口径。 见[案例与官方核对](research.md)。
+
+## 2026-11-10 补充：开户后经营资源
+
+[UPTHOS 创业额度对比](https://tools.upthos.com/startup-credits)可帮助自筹 LLC 筛选云服务和合作福利。已有账户按单项官方规则核对 Mercury Perks 或 Atlas Perks；额度按合资格用量抵扣，未获批或用不上的部分不从经营预算扣除。[查看核对说明](research.md)。

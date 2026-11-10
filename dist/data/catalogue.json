@@ -4913,5 +4913,45 @@
       "https://x.com/GoSailGlobal/status/2116388867523956829",
       "https://x.com/wquguru/status/2117241567660704001"
     ]
+  },
+  {
+    "id": "W5a83b605972e",
+    "title": "UPTHOS：自筹 LLC 的创业额度与合作福利对比",
+    "url": "https://tools.upthos.com/startup-credits",
+    "canonical_url": "https://tools.upthos.com/startup-credits",
+    "alias_urls": [],
+    "platform": "independent_web",
+    "domain": "tools.upthos.com",
+    "author": "UPTHOS",
+    "published_at": null,
+    "date_basis": "页面标注 2026-11-07 核对，未见明确发布日期。",
+    "content_type": "开户后经营资源与创业福利比较",
+    "language": "zh-CN",
+    "accessed_at": "2026-11-10",
+    "read_status": "read",
+    "findings": "UPTHOS 汇总创业额度与合作福利，按自筹、合作渠道、融资资格与暂停状态分类，可用于筛选公司成立后的工具优惠；部分自筹档与 Mercury/Atlas 入口已核对官方规则。",
+    "commercial": "unknown",
+    "registration_outcome": "other",
+    "limitations": "第三方资源索引，不是开户个案，也不保证额度、审批或叠加；只复核选定项目。页面 2026-11-07 为其自标核对日期，不当作发布日期。",
+    "content_cluster_key": "https://tools.upthos.com/startup-credits",
+    "dedupe_reason": "独立资源页，一页一条；17 个项目不拆作开户案例。",
+    "curator_status": "verified",
+    "date_conflict": [],
+    "curator_note": "2026-11-10 读取原页并对选定项目交叉核对；页面自述无推荐链接。",
+    "curator_claim": "UPTHOS 汇总创业额度与合作福利，按自筹、合作渠道、融资资格与暂停状态分类，可用于筛选公司成立后的工具优惠；部分自筹档与 Mercury/Atlas 入口已核对官方规则。",
+    "curator_observation": "原页列出 17 项及官方入口；官方明确 Mercury 的 GitHub 福利排除自筹团队。",
+    "evidence_grade": "medium",
+    "reviewed_source_url": "https://tools.upthos.com/startup-credits",
+    "review_limitations": "第三方资源索引，不是开户个案，也不保证额度、审批或叠加；只复核选定项目。页面 2026-11-07 为其自标核对日期，不当作发布日期。",
+    "review_date_basis": "只记录原页自标核对日期和本次访问日。",
+    "decision_support": false,
+    "added_on": "2026-11-10",
+    "source_origin": "user_provided",
+    "related_urls": [
+      "https://mercury.com/perks",
+      "https://mercury.com/perks/github",
+      "https://mercury.com/perks/aws",
+      "https://support.stripe.com/questions/stripe-atlas-perks-partners"
+    ]
   }
 ]
